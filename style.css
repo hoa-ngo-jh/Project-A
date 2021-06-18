@@ -171,7 +171,7 @@ a {
 
 .information::after {
   content: "\201D";
-  left: 60px;
+  left: 80px;
   bottom: 105px;
 }
 
