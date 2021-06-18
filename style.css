@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #fff;
+  color: #555;
+  font-family: 'Lato', 'Arial', 'Droid Sans', sans-serif;
+  font-weight: 300;
+}
+
+.row {
+  max-width: 900px;
+  margin: 0 auto 0 auto;
+}
+
+/* HEADER */
+
+header {
+  background-image: url(Clip.png);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-text-box {
+  position: absolute;
+  width: 900px;
+  top: 20%;
+  left: 20%;
+}
+
+.hero-text-box h1, .hero-text-box p,
+.link-flex p, li, h5,
+.btn {
+  color: #fff;
+}
+
+.hero-text-box h1 {
+  font-size: 52px;
+  font-weight: 300;
+}
+
+.hero-text-box p {
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 15px;
+  padding-right: 500px;
+  line-height: 1.8;
+}
+
+.logo {
+  position: absolute;
+  height: 60px;
+  width: auto;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.main-nav {
+  list-style: none;
+  float: left;
+  margin-top: 40px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-right: 70px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.main-nav a,
+.dropbtn {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.dropbtn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f8f8f8;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #555;
+  font-weight: 300;
+  display: block;
+  text-align: left;
+  padding: 10px 4px;
+}
+
+.dropdown-content a:hover {
+  background-color: #eee;
+}
+
+.show {
+  display: block;
+}
+
+.menu-icon {
+  display: none;
+}
+
+/* INFORMATION */
+
+.section-informations {
+  position: relative;
+}
+
+.transbox {
+  position: absolute;
+  top: -35px;
+  width: 100%;
+  min-height: 40px;
+  background-color: #fff;
+  transform: skewY(1deg);
+  transform-origin: top right;
+  opacity: 0.5;
+}
+
+.diagonal-box {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding: 80px 0px;
+  transform: skewY(2deg);
+  transform-origin: bottom right;
+}
+
+.information-flex {
+  transform: skewY(-2deg);
+  display: flex;
+}
+
+.information {
+  margin-bottom: 100px;
+}
+
+.information::before,
+.information::after {
+  position: absolute;
+  height: 0;
+  display: block;
+  font-size: 40px;
+}
+
+.information::before {
+  content: "\201C";
+  left: -4px;
+  top: -30px;
+}
+
+.information::after {
+  content: "\201D";
+  left: 60px;
+  bottom: 105px;
+}
+
+.col-left {
+  position: relative;
+  border-right: 1px solid rgb(228, 228, 228);
+  padding-right: 20px;
+  line-height: 1.4;
+}
+
+.col-left p {
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.col-right {
+  line-height: 2;
+  padding-left: 3rem;
+}
+
+.col-right h3 {
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+.col-right p {
+  font-size: 14px;
+  font-family: Arial;
+}
+
+.col-left p,
+.col-right h3 {
+  color: #FE992A;
+}
+
+.con-btn {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+}
+
+.btn {
+  position: absolute;
+  padding: 5px 10px 5px 10px;
+}
+
+.btn-less,
+.btn-greater {
+  bottom: 0px;
+}
+
+.btn-less:hover,
+.btn-greater:hover {
+  cursor: pointer;
+  background-color: #fea13b;
+}
+
+.btn-less {
+  background-color: #FE992A;
+  right: 29px;
+}
+
+.btn-greater {
+  background-color: #FFBA6E;
+  right: 0px;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #E56C69;
+  padding: 50px 50px 110px 50px;
+}
+
+.link-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  line-height: 2;
+}
+
+.link-flex p, a, li, h5 {
+  font-family: 'Droid Sans';
+  font-size: 12px;
+}
+
+.link-flex ul {
+  list-style: none;
+}
+
+#footer-address {
+  margin-top: 1.5rem;
+}
