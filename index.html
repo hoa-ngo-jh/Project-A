@@ -18,7 +18,7 @@
       <div class="row">
         <ul class="main-nav" id="my-nav">
           <li class="dropdown">
-            <button class="dropbtn" onclick="toggleDropdown()">
+            <button class="dropbtn" onclick="toggleDropdown(1)">
               Commercial
               <i class="fa fa-caret-down"></i>
             </button>
@@ -28,11 +28,27 @@
               <a href="#">Item 3</a>
             </div>
           </li>
-          <li>
-            <a href="#">Industrial</a>
+          <li class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown(2)">
+              Industrial
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="my-dropdown-2">
+              <a href="#">Item 1</a>
+              <a href="#">Item 2</a>
+              <a href="#">Item 3</a>
+            </div>
           </li>
-          <li>
-            <a href="#">Infrastructure</a>
+          <li class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown(3)">
+              Infrastructure
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="my-dropdown-3">
+              <a href="#">Item 1</a>
+              <a href="#">Item 2</a>
+              <a href="#">Item 3</a>
+            </div>
           </li>
           <li>
             <a href="#">Resources</a>
@@ -47,15 +63,17 @@
       </div>
     </nav>
     <div class="hero-text-box">
-      <h1>I want to feel <br>what you wanted.</h1>
+      <h1>I want to feel what you wanted.</h1>
       <p>Trent from punchy pint when lets get some snag. Get a dog up ya moolah piece of piss trent from punchy slaps. Shazza got us some chuck a sickie heaps he hasn't got a kindie. As stands out like bush telly with as stands out like porky. She'll be right pretty spiffy trent from punchy cab sav.</p>
+      <p id="link-access">See more at: <a href="#">http://www.boganipsum.com/</a></p>
     </div>
+    <div class="transbox dia"></div>
+    <div class="transbox dia-blur"></div>
   </header>
 
-  <section class="section-informations">
-    <div class="transbox"></div>
-    <div class="diagonal-box">
-      <div class="row information-flex">
+  <section class="row section-informations">
+    <div>
+      <div class="information-flex">
         <div class="col-left">
           <p class="information">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec leo nisi, feugiat vel placerat vitae, vulputate ac nibh. Ut scelerisque quis nulla sed tempor.</p> <div class="con-btn">
             <span class="btn btn-less">&#60;</span>
