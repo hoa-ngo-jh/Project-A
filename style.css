@@ -7,6 +7,7 @@
   --red: #E56C69;
   --text-color: #555;
   --dropdown-color: #D8CFB7;
+  --dropdown-content-color: #DED6C2;
 }
 
 * {
@@ -101,10 +102,9 @@ a {
 
 .dropdown-content {
   position: relative;
-  background: var(--dropdown-color);
+  background: var(--dropdown-content-color);
   display: none;
   min-width: 100px;
-  box-shadow: 0px 8px 16px 0px #00000033;
   z-index: 1;
 }
 
@@ -179,7 +179,8 @@ a {
 .responsive a, .responsive button {
   color: #555;
   line-height: 2;
-  font-size: 25px;
+  font-size: 21px;
+  font-weight: 500;
 }
 
 .menu-icon {
@@ -199,6 +200,7 @@ a {
 /* INFORMATION */
 
 .information {
+  position: relative;
   margin-bottom: 100px;
 }
 
@@ -280,7 +282,7 @@ a {
 .information::after {
   position: absolute;
   height: 0;
-  display: block;
+  display: inline;
   font-size: 40px;
 }
 
@@ -291,8 +293,7 @@ a {
 
 .information::after {
   content: "\201D";
-  right: 12%;
-  bottom: 105px;
+  bottom: 10px;
 }
 
 .col-left {
@@ -308,21 +309,26 @@ a {
 footer {
   background-color: var(--red);
   padding: 50px 50px 110px 50px;
+  line-height: 2;
 }
 
 .link-flex {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  line-height: 2;
 }
 
-.link-flex p, a, li, h5 {
+.link-flex-child {
+  flex: 1 0 41%;
+  padding-bottom: 20px;
+}
+
+footer p, a, li, h5 {
   font-family: 'Droid Sans';
   font-size: 12px;
 }
 
-.link-flex ul {
+footer ul {
   list-style: none;
 }
 

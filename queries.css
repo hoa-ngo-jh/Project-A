@@ -49,10 +49,6 @@
     text-align: left;
   }
 
-  .information::after {
-    right: 20%;
-  }
-
   .col-left,
   .col-right {
     padding: 0 120px;
@@ -61,6 +57,10 @@
   footer {
     padding-left: 120px;
     padding-right: 120px;
+  }
+
+  .link-flex-child {
+    flex: 0;
   }
 }
 
@@ -101,10 +101,6 @@
   /* INFORMATION SECTION */
   .information-flex {
     display: flex;
-  }
-
-  .information::after {
-    right: 75%;
   }
 
   .col-left,
