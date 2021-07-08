@@ -1,19 +1,4 @@
-@media only screen and (min-width: 410px) {
-  .logo {
-    height: 50px;
-  }
-
-  .hero-text-box h1 {
-    font-size: 40px;
-  }
-
-  .hero-text-box p {
-    font-size: 14px;
-  }
-
-}
-
-@media only screen and (min-width: 592px) {
+@media only screen and (min-width: 768px) {
 
   .logo {
     height: 60px;
@@ -23,7 +8,7 @@
     display: block;
     list-style: none;
     float: left;
-    margin: 40px 0 0 120px; 
+    margin-top: 40px;
   }
 
   .main-nav li {
@@ -37,8 +22,8 @@
 
   .hero-text-box {
     padding: 0;
-    top: 25%;
-    left: 120px;
+    top: 23vh;
+    left: 20vw;
   } 
 
   .dropdown-content {
@@ -49,14 +34,27 @@
     text-align: left;
   }
 
+  .section-informations {
+    margin: 0 20vw;
+  }
+
   .col-left,
   .col-right {
-    padding: 0 120px;
+    padding: 0;
   }
 
   footer {
-    padding-left: 120px;
-    padding-right: 120px;
+    padding: 50px 20vw;
+  }
+
+  .link-flex-info {
+    flex-basis: 100% !important;
+    display: flex;
+  }
+
+  #footer-address {
+    margin-top: 0;
+    margin-left: 40px;
   }
 
   .link-flex-child {
@@ -69,33 +67,15 @@
     margin-right: 50px;
   }
 
-  .hero-text-box {
-    left: 210px;
-  }
-
   .hero-text-box a {
     font-size: 14px;
-  }
-
-  footer {
-    padding-left: 210px;
-    padding-right: 210px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  .main-nav {
-    margin-left: 10px;
-  }
-
   .hero-text-box h1 {
     font-size: 52px;
     font-weight: 300;
-  }
-
-  .hero-text-box {
-    top: 21%;
-    left: 230px; 
   }
 
   /* INFORMATION SECTION */
@@ -118,20 +98,14 @@
     padding-left: 50px;
     margin-top: -7px;
   }
-}
 
-@media only screen and (min-width: 1440px) {
-  .hero-text-box {
-    left: 300px;
+  .link-flex-info {
+    flex-basis: 0!important;
+    display: block;
   }
 
-  .main-nav {
-    margin-left: 0;
-  }
-}
-
-@media only screen and (min-width: 1920px) {
-  .hero-text-box {
-    left: 530px;
+  #footer-address {
+    margin-top: 1.5rem;
+    margin-left: 0px;
   }
 }
